@@ -17,8 +17,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 0px;
+    grid-column-gap: 30rem;
+    grid-row-gap: 0rem;
     margin-bottom: 120rem;
     @include tablet {
       display: grid;
@@ -30,7 +30,7 @@
   }
 
   &__item {
-    box-shadow: 0 22px 18px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 22rem 18rem 0 rgba(0, 0, 0, 0.05);
     background: linear-gradient(
       267.61deg,
       rgba(254, 254, 255, 0.03) -10.891%,
@@ -41,7 +41,7 @@
     padding-bottom: 30rem;
     text-align: center;
     justify-content: center;
-    border: 1rem solid #96969633;
+    border: 1rem solid var(--bordercolor);
     cursor: pointer;
     transition: 0.2s all ease-in-out;
   }

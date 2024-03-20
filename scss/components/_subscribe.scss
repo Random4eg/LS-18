@@ -1,9 +1,9 @@
 .subscribe {
-  border: 1rem solid #96969633;
+  border: 1rem solid var(--bordercolor);
   border-radius: 34rem;
   padding: 77rem 20rem 83rem 20rem;
   text-align: center;
-  box-shadow: 0 22px 18px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 22rem 18rem 0 rgba(0, 0, 0, 0.05);
   background: linear-gradient(
     267.61deg,
     rgba(254, 254, 255, 0.03) -10.891%,

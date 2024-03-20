@@ -2,7 +2,7 @@
   display: grid;
   gap: 57rem;
   margin-bottom: 107rem;
-  perspective: 1000px;
+  perspective: 1000rem;
 
   &-item {
     display: flex;
@@ -67,7 +67,7 @@
       transition: 0.2s all ease-in-out;
     }
     &__btn:hover {
-      transform: translatex(-2px) scale(1.1);
+      transform: translatex(-2rem) scale(1.1);
       transition: 0.2s all ease-in-out;
     }
   }
