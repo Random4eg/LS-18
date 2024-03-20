@@ -1,0 +1,83 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 3;
+  }
+  &__nav {
+    display: flex;
+    gap: 60rem;
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include tablet {
+      position: fixed;
+      width: 80%;
+      height: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      background: linear-gradient(91deg, #2563eb 0%, #d946ef 100%);
+      font-weight: 700;
+      font-size: 42rem;
+      font-family: var(--third-family);
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-120%);
+      transition: var(--transition);
+      z-index: 3;
+    }
+
+    &._active {
+      transform: translateX(0);
+    }
+
+    .icon-close {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      color: var(--white);
+    }
+  }
+  &__li:hover {
+    text-decoration: underline;
+    transform: translatex(-2px) scale(1.1);
+    transition: 0.2s all ease-in-out;
+  }
+
+  &__a {
+    @include tablet {
+      color: var(--white);
+    }
+  }
+
+  &__btn {
+    border-radius: 5rem;
+    padding: 12rem 24rem;
+    background: linear-gradient(91deg, #2563eb 0%, #d946ef 100%);
+    font-weight: 500;
+    font-size: 14rem;
+    text-align: center;
+    transition: 0.2s all ease-in-out;
+  }
+  &__btn:hover {
+    transform: translatex(-2px) scale(1.1);
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.icon-menu,
+.icon-close {
+  cursor: pointer;
+  display: none;
+
+  @include tablet {
+    display: inline-block;
+  }
+}

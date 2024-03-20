@@ -1,0 +1,27 @@
+.footer-policy {
+  border-top: 1px solid rgba(150, 150, 150, 0.2);
+  padding-top: 36rem;
+  padding-bottom: 37rem;
+  display: flex;
+  align-items: center;
+  &__copy {
+    margin-right: auto;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &__link {
+    margin-right: 53rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    &:last-child {
+      margin-right: 39rem;
+    }
+  }
+}

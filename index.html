@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon.ico"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Virtual Reality</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__logo logo">
+          <a class="logo" href="/">
+            <img src="img/logo.png" alt="logo" />Zone.</a
+          >
+        </div>
+        <div class="header__nav">
+          <ul class="header__ul" id="headerUl">
+            <li class="header__li"><a class="header__a" href="/">Home</a></li>
+            <li class="header__li">
+              <a class="header__a" href="/">About Us</a>
+            </li>
+            <li class="header__li">
+              <a class="header__a" href="/">Service</a>
+            </li>
+            <li class="header__li">
+              <a class="header__a" href="/">Pricing</a>
+            </li>
+            <li class="header__li"><a class="header__a" href="/">Blog</a></li>
+            <span class="material-icons icon-close" onclick="navToggle()"
+              >close</span
+            >
+          </ul>
+
+          <span class="material-icons icon-menu" onclick="navToggle()"
+            >menu</span
+          >
+          <form action="submit">
+            <button class="btn header__btn">Contact Us</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="welcome">
+        <div class="welcome__info slide-in-top">
+          <div class="welcome__title">Virtual Reality Business Solutions</div>
+          <div class="welcome__desc">
+            We have over 15 year exprience in business consultting arena. We
+            have over 15 year exprience in business consultting arena and
+            artficial intelligence.
+          </div>
+          <div class="welcome__nav">
+            <a href="#footer" class="btn welcome__join heartbeat">Join Us</a>
+            <a href="/" class="btn welcome__watch">
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18 3C26.2845 3 33 9.7155 33 18C33 26.2845 26.2845 33 18 33C9.7155 33 3 26.2845 3 18C3 9.7155 9.7155 3 18 3ZM18 6C14.8174 6 11.7652 7.26428 9.51472 9.51472C7.26428 11.7652 6 14.8174 6 18C6 21.1826 7.26428 24.2348 9.51472 26.4853C11.7652 28.7357 14.8174 30 18 30C21.1826 30 24.2348 28.7357 26.4853 26.4853C28.7357 24.2348 30 21.1826 30 18C30 14.8174 28.7357 11.7652 26.4853 9.51472C24.2348 7.26428 21.1826 6 18 6ZM15.756 10.704L24.756 16.704C24.9681 16.8275 25.1467 17.0012 25.276 17.2099C25.4053 17.4185 25.4815 17.6557 25.4978 17.9007C25.5141 18.1456 25.47 18.3908 25.3694 18.6147C25.2689 18.8386 25.1149 19.0345 24.921 19.185L15.756 25.296C15.528 25.429 15.269 25.4995 15.0051 25.5004C14.7412 25.5013 14.4817 25.4326 14.2528 25.3011C14.024 25.1696 13.8338 24.9801 13.7017 24.7517C13.5695 24.5232 13.4999 24.2639 13.5 24V12C13.4999 11.7361 13.5695 11.4768 13.7017 11.2483C13.8338 11.0199 14.024 10.8304 14.2528 10.6989C14.4817 10.5674 14.7412 10.4987 15.0051 10.4996C15.269 10.5005 15.528 10.571 15.756 10.704Z"
+                  fill="white"
+                />
+              </svg>
+              <span>Watch video</span>
+            </a>
+          </div>
+        </div>
+        <div class="welcome__img slide-in-top">
+          <img src="img/image/Saly-19.png" alt="Welcome" />
+        </div>
+      </section>
+      <section id="Service" class="services">
+        <div class="services__title">Our Services</div>
+        <div class="services-title__desc">
+          We turn information into actionable insights We work to understand
+          your issues and are driven to ask better questions in the pursuit of
+          making work.
+        </div>
+        <div class="services__box">
+          <div class="services__item">
+            <img src="/img/Service/Icon.png" alt="Order" />
+            <div class="services__name">Order Management</div>
+            <div class="services__desc">
+              Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+              quis accumsan nisi Ut ut felis congue nisl hendrerit commodo
+            </div>
+            <div class="services__link">
+              <a href="/"
+                >Learn More<span class="material-icons services__ico"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="/img/Service/Icon2.png" alt="Social" />
+            <div class="services__name">Social Assistant</div>
+            <div class="services__desc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                quis accumsan nisi Ut ut felis congue nisl hendrerit commodo
+              </p>
+            </div>
+            <div class="services__link">
+              <a href="/"
+                >Learn More<span class="material-icons services__ico"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="/img/Service/Icon3.png" alt="Crypto Platform" />
+            <div class="services__name">Crypto Platform</div>
+            <div class="services__desc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                quis accumsan nisi Ut ut felis congue nisl hendrerit commodo
+              </p>
+            </div>
+            <div class="services__link">
+              <a href="/"
+                >Learn More<span class="material-icons services__ico"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="/img/Service/Icon4.png" alt="Trading" />
+            <div class="services__name">Smart Trading Modules</div>
+            <div class="services__desc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                quis accumsan nisi Ut ut felis congue nisl hendrerit commodo
+              </p>
+            </div>
+            <div class="services__link">
+              <a href="/"
+                >Learn More<span class="material-icons services__ico"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="/img/Service/Icon5.png" alt="News" />
+            <div class="services__name">Analyzer of the News</div>
+            <div class="services__desc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                quis accumsan nisi Ut ut felis congue nisl hendrerit commodo
+              </p>
+            </div>
+            <div class="services__link">
+              <a href="/"
+                >Learn More<span class="material-icons services__ico"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="services__item">
+            <img src="/img/Service/Icon6.png" alt="Price" />
+            <div class="services__name">Module of Price Notification</div>
+            <div class="services__desc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed
+                quis accumsan nisi Ut ut felis congue nisl hendrerit commodo
+              </p>
+            </div>
+            <div class="services__link">
+              <a href="/"
+                >Learn More<span class="material-icons services__ico"
+                  >arrow_forward</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project">
+        <div class="project-item slide-in-top">
+          <div class="project-item__img">
+            <img src="img/image/img1.png" alt="project1" />
+          </div>
+          <div class="project-item__info">
+            <div class="project-item__title">
+              We complete every projects extra care as customer need
+            </div>
+            <div class="project-item__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+              dictum risus, non suscipit arcu. Quisque aliquam posuere tortor,
+              sit amet convallis nuncoe scelerisque in. orem ipsum dolor sit
+              amet, consectetur adipisicing elit. Labore eius molestiae facere,
+              natus reprehenderit eaque eum, autem ipsam. Magfini, error.
+              Tempora odit laborum iure inventore possimus laboriosam qui nam.
+            </div>
+            <a href="/" class="btn project-item__btn">Read more</a>
+          </div>
+        </div>
+        <div class="project-item slide-in-top">
+          <div class="project-item__img">
+            <img src="img/image/img2.png" alt="project2" />
+          </div>
+          <div class="project-item__info">
+            <div class="project-item__title">
+              We complete every projects extra care as customer need
+            </div>
+            <div class="project-item__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+              dictum risus, non suscipit arcu. Quisque aliquam posuere tortor,
+              sit amet convallis nuncoe scelerisque in. orem ipsum dolor sit
+              amet, consectetur adipisicing elit. Labore eius molestiae facere,
+              natus reprehenderit eaque eum, autem ipsam. Magfini, error.
+              Tempora odit laborum iure inventore possimus laboriosam qui nam.
+            </div>
+            <a href="/" class="btn project-item__btn">Read more</a>
+          </div>
+        </div>
+      </section>
+      <section class="teams">
+        <div class="teams__title">Meet Our Team</div>
+        <div class="teams-title__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+          accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+        </div>
+        <div class="teams__box">
+          <div class="teams__item">
+            <div class="teams__title">
+              <img
+                src="img/foto/develop1.png"
+                alt="Sunny"
+                class="teams__image"
+              />
+              <div class="teams__name">
+                Sunny Khan
+                <div class="teams__specialty">Executive officer</div>
+              </div>
+            </div>
+            <div class="teams__networks">
+              <a href="/"
+                ><img src="img/link/team/skype 1.svg" alt="skype"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/linkedin 1.svg" alt="linkedin"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/twitter.svg" alt="twitter"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/facebook.svg" alt="facebook"
+              /></a>
+            </div>
+          </div>
+          <div class="teams__item">
+            <div class="teams__title">
+              <img
+                src="img/foto/develop2.png"
+                alt="Alina"
+                class="teams__image"
+              />
+              <div class="teams__name">
+                Alina Jesia
+                <div class="teams__specialty">UX/UI DESIGNER</div>
+              </div>
+            </div>
+            <div class="teams__networks">
+              <a href="/"
+                ><img src="img/link/team/skype 1.svg" alt="skype"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/linkedin 1.svg" alt="linkedin"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/twitter.svg" alt="twitter"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/facebook.svg" alt="facebook"
+              /></a>
+            </div>
+          </div>
+          <div class="teams__item">
+            <div class="teams__title">
+              <img
+                src="img/foto/develop3.png"
+                alt="Alex"
+                class="teams__image"
+              />
+              <div class="teams__name">
+                Alex Sohag
+                <div class="teams__specialty">BUSINESS DEVELOPMENT</div>
+              </div>
+            </div>
+            <div class="teams__networks">
+              <a href="/"
+                ><img src="img/link/team/skype 1.svg" alt="skype"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/linkedin 1.svg" alt="linkedin"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/twitter.svg" alt="twitter"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/facebook.svg" alt="facebook"
+              /></a>
+            </div>
+          </div>
+          <div class="teams__item">
+            <div class="teams__title">
+              <img
+                src="img/foto/develop4.png"
+                alt="Afroza"
+                class="teams__image"
+              />
+              <div class="teams__name">
+                Afroza Mou
+                <div class="teams__specialty">Head of marketing</div>
+              </div>
+            </div>
+            <div class="teams__networks">
+              <a href="/"
+                ><img src="img/link/team/skype 1.svg" alt="skype"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/linkedin 1.svg" alt="linkedin"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/twitter.svg" alt="twitter"
+              /></a>
+              <a href="/"
+                ><img src="img/link/team/facebook.svg" alt="facebook"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Gallery" class="subscribe">
+        <div class="subscribe__title">Subscribe to get the Latest News</div>
+        <div class="subscribe__desc">
+          We recommended you to subscribe to our newspaper,drop your email below
+          to get daily update about us
+        </div>
+        <form class="subscribe-form">
+          <input
+            class="subscribe-form__input"
+            type="email"
+            placeholder="Enter your email addres"
+          />
+          <button type="submit" class="btn subscribe-form__btn">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 14.6667C8.74867 14.6667 8.51667 14.5247 8.40333 14.298L6.42467 10.3407C6.316 10.1233 6.33467 9.86334 6.47267 9.66268L9.66667 5.33334L5.33667 8.52668C5.136 8.66534 4.876 8.68268 4.65867 8.57468L0.702001 6.59668C0.464668 6.47734 0.320001 6.22868 0.334668 5.96334C0.348668 5.69801 0.520001 5.46601 0.769334 5.37468L13.436 0.708009C13.6793 0.619342 13.9533 0.677342 14.138 0.862009C14.322 1.04534 14.382 1.32001 14.292 1.56401L9.62533 14.2307C9.53333 14.48 9.302 14.6513 9.03667 14.6653C9.02467 14.666 9.012 14.6667 9 14.6667Z"
+                fill="white"
+              />
+            </svg>
+            <span class="subscribe-form__btn-text"> Subscribe</span>
+          </button>
+        </form>
+      </section>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__box">
+          <div class="footer__link">
+            <a class="logo" href="/">
+              <img src="img/logo.png" alt="logo" /> Zone.</a
+            >
+
+            <a href="https://maps.app.goo.gl/s33RLKyFxZzjCmDx7"
+              ><img src="/img/link/footer/adress/Location.png" alt="Location" />
+              Dhaka, Bangladesh</a
+            ><br />
+
+            <a href="tel:0943833399"
+              ><img src="/img/link/footer/adress/Calling.png" alt="Calling" />
+              0943833399</a
+            ><br />
+
+            <a href="mailto:support@zone.com"
+              ><img src="/img/link/footer/adress/Message.png" alt="Message" />
+              support@zone.com</a
+            ><br />
+
+            <div class="footer__networks">
+              <a href="/"
+                ><img src="/img/link/footer/facebook.png" alt="facebook"
+              /></a>
+              <a href="/"
+                ><img src="/img/link/footer/twitter.png" alt="twitter"
+              /></a>
+              <a href="/"
+                ><img src="/img/link/footer/instagram.png" alt="instagram"
+              /></a>
+              <a href="/"
+                ><img src="/img/link/footer/pinterest.png" alt="pinterest"
+              /></a>
+            </div>
+          </div>
+          <div class="footer__link">
+            <a href="/">Service</a><br />
+            <a href="/">Order Management</a><br />
+            <a href="/">Social Assistant</a><br />
+            <a href="/">Crypto Platform</a><br />
+            <a href="/">Analyzer of the News</a><br />
+          </div>
+          <div class="footer__link">
+            <a href="/">Company</a><br />
+            <a href="/">About Us</a><br />
+            <a href="/">News</a><br />
+            <a href="/">Our trusted partner</a><br />
+            <a href="/">New users FAQ</a><br />
+          </div>
+          <div class="footer__link">
+            <a href="/">Supportsy</a><br />
+            <a href="/">Help center</a><br />
+            <a href="/">Feedback</a><br />
+            <a href="/">Contact us</a><br />
+            <a href="/">Terms conditins</a><br />
+          </div>
+          <div class="footer__link">
+            <a href="/">Resources</a><br />
+            <a href="/">Download app</a><br />
+            <a href="/">Blog</a><br />
+            <a href="/">What’s new</a><br />
+            <a href="/">Sitemap</a><br />
+          </div>
+        </div>
+      </div>
+      <div class="footer-policy">
+        <div class="container footer-policy__container">
+          <div class="footer-policy__copy">
+            &#169; <span id="year"></span> Zone. - All rights reserved.
+          </div>
+          <a href="/" class="footer-policy__link">Privacy</a>
+          <a href="/" class="footer-policy__link">Security</a>
+          <a href="/" class="footer-policy__link">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

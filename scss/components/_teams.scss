@@ -1,0 +1,77 @@
+.teams {
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 42rem;
+    margin-bottom: 30rem;
+  }
+  .teams-title__desc {
+    font-weight: 400;
+    font-size: 16rem;
+    text-align: center;
+    margin-bottom: 40rem;
+    max-width: 480rem;
+    margin-inline: auto;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    margin-bottom: 120rem;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 30rem;
+      grid-row-gap: 30rem;
+    }
+  }
+
+  &__item {
+    box-shadow: 0 22px 18px 0 rgba(0, 0, 0, 0.05);
+    background: linear-gradient(
+      267.61deg,
+      rgba(254, 254, 255, 0.03) -10.891%,
+      rgba(255, 255, 255, 0.02) 104.767%
+    );
+    border-radius: 34rem;
+    padding-top: 37rem;
+    padding-bottom: 30rem;
+    text-align: center;
+    justify-content: center;
+    border: 1rem solid #96969633;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+  }
+  &__item:hover {
+    transform: translatex(-2px) scale(1.1);
+    transition: 0.2s all ease-in-out;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 28rem;
+  }
+
+  &__specialty {
+    font-weight: 400;
+    font-size: 16rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__networks {
+    gap: 15rem;
+  }
+}
+.all {
+  &__desc {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 187%;
+    text-align: center;
+  }
+}

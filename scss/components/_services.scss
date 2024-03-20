@@ -1,0 +1,84 @@
+.services {
+  &__title {
+    font-weight: 700;
+    font-size: 42rem;
+    text-align: center;
+    margin-bottom: 30rem;
+  }
+  .services-title__desc {
+    font-weight: 400;
+    font-size: 16rem;
+    text-align: center;
+    line-height: 162%;
+    margin-bottom: 40rem;
+    max-width: 560rem;
+    margin-inline: auto;
+  }
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    margin-bottom: 120rem;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 30rem;
+      grid-row-gap: 30rem;
+    }
+    @include mobile {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-column-gap: 30rem;
+      grid-row-gap: 30rem;
+    }
+  }
+
+  &__item {
+    box-shadow: 0 22px 18px 0 rgba(0, 0, 0, 0.05);
+    background: linear-gradient(
+      267.61deg,
+      rgba(254, 254, 255, 0.03) -10.891%,
+      rgba(255, 255, 255, 0.02) 104.767%
+    );
+    border-radius: 34rem;
+    border: 1rem solid #96969633;
+    padding-top: 37rem;
+    padding-bottom: 30rem;
+    text-align: center;
+    justify-content: center;
+    transition: 0.2s all ease-in-out;
+  }
+  &__item:hover {
+    transform: translatex(-2px) scale(1.1);
+    transition: 0.2s all ease-in-out;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 24rem;
+    margin-top: 19rem;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 162%;
+    padding: 24rem 23rem;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 162%;
+    position: relative;
+  }
+
+  &__ico {
+    position: absolute;
+    top: -1rem;
+  }
+}
